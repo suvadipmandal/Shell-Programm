@@ -1,0 +1,4 @@
+echo "Enter the number"
+read n
+ip1=$n
+echo "obase=2; $ip1"|bc

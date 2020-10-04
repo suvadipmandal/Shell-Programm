@@ -1,0 +1,24 @@
+echo "Enter the number of row"
+read NR
+typest -A arr
+for i in `seq 0 $NR`;d
+do
+arr[$i,0]=1
+arr[$i,$i]=1
+p=$((i-1))
+for ((j-1;j<$i;J++));
+do
+a=${arr[$((i-1)),$((j-1))]}
+b=${arr[$((i-1)),$j]}
+arr[$i,$j]=$((a+b))
+done
+echo ${arr[$i]}
+done
+for((i=0;i<=$NR;i++))
+do
+for((j=0;j<=$i;j++))
+do
+echo -n ${arr[si,$j]} " "
+done
+print "\n"
+done

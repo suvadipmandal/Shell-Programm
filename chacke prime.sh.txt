@@ -1,0 +1,17 @@
+echo "Enter the number"
+read num
+i=2
+f=0
+while [ $i -le `expr $num / 2` ]
+do
+if [ expr $sum % $i -eq 0 ]
+then
+f=1
+fi
+i=`expr $i + 1`
+done
+if [ $f -eq 1 ]
+then
+echo "the number is composite"
+echo "he number is prime"
+fi
